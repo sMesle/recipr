@@ -1,9 +1,23 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="flex bg-gray-200">
+    <test-nav-bar />
+    <div
+      class="container flex-grow flex-shrink-0 px-4 md:mt-6 lg:mt-16 mx-auto"
+    >
+      <Nuxt />
+    </div>
   </div>
 </template>
 
+<script>
+import TestNavBar from '@/components/TestNavBar.vue'
+export default {
+  name: 'default',
+  components: {
+    TestNavBar,
+  },
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
